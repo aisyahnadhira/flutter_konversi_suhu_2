@@ -14,7 +14,13 @@ class riwayatHitung extends StatelessWidget {
         child: ListView.builder(
       itemCount: listHasil.length,
       itemBuilder: (BuildContext context, int index) {
-        return Text(listHasil[index]);
+        return Padding(
+          padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+          child: Text(
+            listHasil[index],
+            style: TextStyle(fontSize: 20),
+          ),
+        );
       },
     ));
   }
